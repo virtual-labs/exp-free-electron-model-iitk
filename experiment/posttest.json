@@ -41,7 +41,7 @@
         "a": "The n-π* transition always occurs at a lower energy than the π-π* transitioner1",
         "b": "The π-π* transition always occurs at a lower energy than the n-π* transition.",
         "c": "The energy difference between the π-π* and n-π* transitions is always constant irrespective of the molecule",
-        "d": "The -* transition always occurs at a lower energy than the π -π* transition"
+        "d": "The σ - σ*  transition always occurs at a lower energy than the π -π* transition"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -55,9 +55,9 @@
     {
       "question": "In the Free Electron Model, what is the effect of increasing the number of electrons in the conjugated system?",
       "answers": {
-        "a": "The absorption bands shift to shorter wavelengths",
-        "b": "The absorption bands shift to longer wavelengths",
-        "c": "The absorption bands will not changeer3",
+        "a": "The absorption bands shift to shorter wavelengths.",
+        "b": "The absorption bands shift to longer wavelengths.",
+        "c": "The absorption bands will not change.",
         "d": "More vibrational fine structure will appear in the absorption band." 
       },
       "explanations": {
