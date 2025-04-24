@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Add CSS at the head of HTML file -->
+	
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-		<!-- Your code goes here-->
-
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+	<div class="main">
+		<div class="header">
+			<h1>
+				Electronic spectra of conjugated dye and test of free electron model
+			</h1>
+		</div>
+		<div class="footer">
+			<div class="simulate" id="simulator">
+				<img id="lab" src="./images/lab.png" alt="images">
+			</div>
+			<div id="work">
+				<div id="pc" class="pc">
+					<img id="pcimage" class="pcimage" src="./images/PC.png" alt="pc">
+					<h1 id="h1pc" class="hovpc">Computer Screen</h1>
+				</div>
+				<div id="spectrometer">
+					<img id="spectoimg" src="./images/specto-off.png" alt="spectrophotometer">
+					<h1 id="hovspecto">UV-Vis Spectrophotometer</h1> 
+				</div>
+				<div id="pippete">
+					<img class="pippeteimg" src="./images/micro pippete.png" alt="PIPPETE">
+					<h1 id="hovpippete">Micro-Pippete</h1>
+				</div> 
+				<div id="conicalflask">
+					<img class="flaskimg" src="./images/Conical flask.png" alt="conicalflask">
+					<h1 id="hovflask">Conicalflask</h1>
+				</div>
+				<div id="cuvette">
+					<img class="cuvetteimg" src="./images/cuvette-1.png" alt="cuvette">
+					<h1 id="hovcuvette">Cuvette</h1>
+				</div>
+				<div id="box1">
+					<img class="box1img" src="./images/1,4diphenyl.png" alt="box1">
+					<h1 id="hovbox1">1,4–diphenyl–1,3butadiene</h1>
+				</div>
+				<div id="box2">
+					<img class="box2img" src="./images/1,6-diphenyl.png" alt="box2">
+					<h1 id="hovbox2">1,6–diphenyl–1,3,5hexatriene</h1>
+				</div>
+				<div id="box3">
+					<img class="box3img" src="./images/1,8-diphenyl.png" alt="box3">
+					<h1 id="hovbox3">1,8–diphenyl–1,3,5,7octatetraene</h1>
+				</div>
+				<div id="box4">
+					<img class="box4img" src="./images/Cyclohexane.png" alt="box4">
+					<h1 id="hovbox4">Cyclohexane</h1>
+				</div>
+				<div id="alfoil">
+					<img class="alfoilimg" src="./images/alluminium foil.png" alt="alfoil">
+					<h1 id="hovalfoil">Aluminium-foil</h1>
+				</div>
+			</div>
+			<div id="message">
+				<h1 id="ins">Instructions</h1>
+				<h1 id="text">
+					Make yourself familiar with the instruments by hovering over them, then click on start button to start the experiment.
+				</h1>	
+				<button id="start"><a href="step.html">Start</a></button>		
+			</div>
+		</div>
+		
+	</div>
+	
+    <script src="./js/main.js"></script>
 </body>
 </html>
