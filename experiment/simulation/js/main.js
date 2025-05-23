@@ -174,117 +174,427 @@ function changeImage(){
 
 //graph
 
-function graph1(){
+let currentStep2 = "step1";
+let myChart = null;
 
-    // Get the context of the canvas element we want to select
-var ctx = document.getElementById('myChart').getContext('2d');
+function auto1() {
+    if (currentStep2 !== "step1") return;
+    currentStep2 = "step2";
 
-// Define the data for the chart
-var data = {
-    labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
-    datasets: [{
-        label: '1,4–diphenyl–1,3butadiene',
-        data: [0.05, 0.08, 0.29, 0.50, 0.20, 0.04, 0.01, 0.00],
-        // fill: false,
-        borderColor: 'rgba(75, 192, 192, 1)',
-        tension: 0.2 // This property makes the line smooth
-    }]
-};
+    let msg = document.getElementById("text");
+    msg.innerText = "Click on Baseline button."
+    speak(msg.innerText);
 
-// Define the options for the chart
-var options = {
-    responsive: true,
-    responsive: true,
-    plugins: {
-        legend: {
-            display: true,
-            position: 'top'
-        },
-        title: {
-            display: true,
-            text: 'Adsorption vs Wavelength'
-        }
-    },
-    scales: {
-        x: {
-            display: true,
+    const ctx0 = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data0 = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: "",
+            data: [],
+            borderColor: 'rgba(0,0,0,0.2)',
+            borderDash: [5, 5],
+        }]
+    };
+
+    const options0 = {
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            },
             title: {
                 display: true,
-                text: 'Wavelength'
+                text: 'Absorbance vs Wavelength'
             }
         },
-        y: {
-            display: true,
-            title: {
-                display: true,
-                text: 'Absorbance'
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
             }
         }
-    }
-};
+    };
 
-// Create the chart
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: data,
-    options: options
-});
-
-} 
-
-function auto(){
-
-var ctx0 = document.getElementById('myChart').getContext('2d');
-
-var data0 = {
-    labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
-    datasets: [{
-        label: "",
-        data: [],
-    }]
-};
-
-var options0 = {
-    plugins: {
-        legend: {
-            display: true,
-            position: 'top'
-        },
-        title: {
-            display: true,
-            text: 'Adsorption vs Wavelength'
-        }
-    },
-    scales: {
-        x: {
-            display: true,
-            title: {
-                display: true,
-                text: 'Wavelength'
-            }
-        },
-        y: {
-            display: true,
-            title: {
-                display: true,
-                text: 'Absorbance'
-            }
-        }
-    }
-};
-
-// Create the chart
-var myChart = new Chart(ctx0, {
-    type: 'line',
-    data: data0,
-    options: options0
-});
-
-
+    myChart = new Chart(ctx0, {
+        type: 'line',
+        data: data0,
+        options: options0
+    });
 }
 
-let strt = document.getElementById("st");
+function baseLine1(){
+    if (currentStep2 !== "step2") return;
+    currentStep2 = "step3";
 
-strt.addEventListener('click',()=>{
-    graph1();
-})
+    let msg = document.getElementById("text");
+    msg.innerText = "Click on Start button."
+    speak(msg.innerText);
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: '1,6–diphenyl–1,3,5-hexatriene',
+            data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+            borderColor: 'rgba(0, 0, 0, 1)',
+            tension: 0.2
+        }]
+    };
+
+    const options = {
+        plugins: {
+            legend: { display: true, position: 'top' },
+            title: { display: true, text: 'Absorbance vs Wavelength' }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}
+
+function graph1() {
+    if (currentStep2 !== "step3") return;
+    currentStep2 = "step4";
+
+    let msg = document.getElementById("text");
+    msg.innerText = "Note the maximum wavelength of Molecule 1."
+    speak(msg.innerText);
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: '1,6–diphenyl–1,3,5-hexatriene',
+            data: [0.05, 0.08, 0.29, 0.50, 0.20, 0.04, 0.01, 0.00],
+            borderColor: 'rgba(0, 0, 255, 1)',
+            tension: 0.2
+        }]
+    };
+
+    const options = {
+        plugins: {
+            legend: { display: true, position: 'top' },
+            title: { display: true, text: 'Absorbance vs Wavelength' }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}
+
+//Graph-2
+
+let currentStep3 = "step1";
+
+function auto2() {
+    if (currentStep3 !== "step1") return;
+    currentStep3 = "step2";
+
+    let msg = document.getElementById("text");
+    msg.innerText = "Click on Baseline button."
+    speak(msg.innerText);
+
+    const ctx0 = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data0 = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: "",
+            data: [],
+            borderColor: 'rgba(0,0,0,0.2)',
+            borderDash: [5, 5],
+        }]
+    };
+
+    const options0 = {
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            },
+            title: {
+                display: true,
+                text: 'Absorbance vs Wavelength'
+            }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx0, {
+        type: 'line',
+        data: data0,
+        options: options0
+    });
+}
+
+function baseLine2(){
+    if (currentStep3 !== "step2") return;
+    currentStep3 = "step3";
+
+    let msg = document.getElementById("text");
+    msg.innerText = "Click on Start button."
+    speak(msg.innerText);
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: '1,6–diphenyl–1,3,5-hexatriene',
+            data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+            borderColor: 'rgba(0, 0, 0, 1)',
+            tension: 0.2
+        }]
+    };
+
+    const options = {
+        plugins: {
+            legend: { display: true, position: 'top' },
+            title: { display: true, text: 'Absorbance vs Wavelength' }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}
+
+function graph2() {
+    if (currentStep3 !== "step3") return;
+    currentStep3 = "step4";
+
+    let msg = document.getElementById("text");
+    msg.innerText = "Note the maximum wavelength of Molecule 2."
+    speak(msg.innerText);
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: '1,6–diphenyl–1,3,5-hexatriene',
+            data: [0.05, 0.08, 0.29, 0.40, 0.60, 0.15, 0.01, 0.00],
+            borderColor: 'rgba(0, 192, 0, 1)',
+            tension: 0.2
+        }]
+    };
+
+    const options = {
+        plugins: {
+            legend: { display: true, position: 'top' },
+            title: { display: true, text: 'Absorbance vs Wavelength' }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}
+
+//Graph-3
+
+let currentStep4 = "step1";
+
+function auto3() {
+    if (currentStep4 !== "step1") return;
+    currentStep4 = "step2";
+
+    let msg = document.getElementById("text");
+    msg.innerText = "Click on Baseline button."
+    speak(msg.innerText);
+
+    const ctx0 = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data0 = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: "",
+            data: [],
+            borderColor: 'rgba(0,0,0,0.2)',
+            borderDash: [5, 5],
+        }]
+    };
+
+    const options0 = {
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            },
+            title: {
+                display: true,
+                text: 'Absorbance vs Wavelength'
+            }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx0, {
+        type: 'line',
+        data: data0,
+        options: options0
+    });
+}
+
+function baseLine3(){
+    if (currentStep4 !== "step2") return;
+    currentStep4 = "step3";
+
+    let msg = document.getElementById("text");
+    msg.innerText = "Click on Start button."
+    speak(msg.innerText);
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: '1,6–diphenyl–1,3,5-hexatriene',
+            data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+            borderColor: 'rgba(0, 0, 0, 1)',
+            tension: 0.2
+        }]
+    };
+
+    const options = {
+        plugins: {
+            legend: { display: true, position: 'top' },
+            title: { display: true, text: 'Absorbance vs Wavelength' }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}
+
+function graph3() {
+    if (currentStep4 !== "step3") return;
+    currentStep4 = "step4";
+
+    let msg = document.getElementById("text");
+    msg.innerText = "Note the maximum wavelength of Molecule 3."
+    speak(msg.innerText);
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    if (myChart) myChart.destroy();
+
+    const data = {
+        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        datasets: [{
+            label: '1,6–diphenyl–1,3,5-hexatriene',
+            data: [0.05, 0.08, 0.29, 0.30, 0.40, 0.64, 0.35, 0.00],
+            borderColor: 'rgba(255, 80, 0, 1)',
+            tension: 0.2
+        }]
+    };
+
+    const options = {
+        plugins: {
+            legend: { display: true, position: 'top' },
+            title: { display: true, text: 'Absorbance vs Wavelength' }
+        },
+        scales: {
+            x: {
+                title: { display: true, text: 'Wavelength (nm)' }
+            },
+            y: {
+                title: { display: true, text: 'Absorbance' }
+            }
+        }
+    };
+
+    myChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+}
