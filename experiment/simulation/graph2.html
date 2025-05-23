@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="main">
+		<div class="header">
+			<h1>
+				Electronic spectra of conjugated dye and test of free electron model
+			</h1>
+		</div>
+		<div class="footer">
+			<div class="simulate" id="simulator" style=" background: linear-gradient(45deg, #f0d5ac , #f8ca8e);">
+				<img id="lab" src="./images/screen.png" alt="images">
+				<marquee>If the max absorbance value is greater than 1, dillute the sample and repeat the experiment .(Otherwise error will be incorporeted).</marquee>
+			</div>
+			<div id="work">
+				<div class="inbox">
+					<button>M</button>
+					<hr>
+					1,6–diphenyl–1,3,5-hexatriene
+					<hr>
+					Max Wavelength = 353.5nm
+					<hr>
+					<button>Molecule-2</button>
+				</div>
+				<div class="button">
+					<button id="Azero" class="auto" onclick="auto2()">||| Auto Zero</button>
+					<button id="bl" class="auto" onclick="baseLine2()">$$ Baseline</button>
+					<button id="st" class="auto" onclick="graph2()" >## Start</button>
+				</div>
+				<div class="card">
+					<canvas id="myChart" width="400px" height="200px"></canvas>
+				</div>
+			</div>
+			<div id="message">
+				<h1 id="ins">Instructions</h1>
+				<h1 id="text" class="step1">
+					Click on AutoZero button.
+				</h1>
+				<button id="start"> <a href="graph3.html">Mol-3</a></button>
+			</div>
+		</div>
+		
+	</div>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
