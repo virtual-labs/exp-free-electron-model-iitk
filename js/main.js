@@ -560,7 +560,7 @@ function graph3() {
     currentStep4 = "step4";
 
     let msg = document.getElementById("text");
-    msg.innerText = "Note the maximum wavelength of Molecule 3."
+    msg.innerText = "Note the maximum wavelength of Molecule 3.\n\n Click next to view the Table"
     speak(msg.innerText);
 
     const ctx = document.getElementById('myChart').getContext('2d');
