@@ -572,7 +572,7 @@ function graph3() {
         datasets: [{
             label: '1,8–diphenyl–1,3,5,7-octatetraene',
             data: [0.05, 0.08, 0.29, 0.30, 0.40, 0.69,0.44, 0.48, 0.00],
-            borderColor: 'rgba(255, 80, 0, 1)',
+            borderColor: 'orange',
             tension: 0.2
         }]
     };
