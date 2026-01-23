@@ -242,7 +242,7 @@ function baseLine1(){
     const data = {
         labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
         datasets: [{
-            label: '1,6–diphenyl–1,3,5-hexatriene',
+            label: '1,4–diphenyl–1,3-butadiene',
             data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
             borderColor: 'rgba(0, 0, 0, 1)',
             tension: 0.2
@@ -284,10 +284,10 @@ function graph1() {
     if (myChart) myChart.destroy();
 
     const data = {
-        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        labels: ['250', '275', '300', '325','329.5', '350', '375', '400', '425'],
         datasets: [{
-            label: '1,6–diphenyl–1,3,5-hexatriene',
-            data: [0.05, 0.08, 0.29, 0.50, 0.20, 0.04, 0.01, 0.00],
+            label: '1,4–diphenyl–1,3-butadiene',
+            data: [0.05, 0.08, 0.29, 0.50, 0.60, 0.20, 0.04, 0.01, 0.00],
             borderColor: 'rgba(0, 0, 255, 1)',
             tension: 0.2
         }]
@@ -426,10 +426,10 @@ function graph2() {
     if (myChart) myChart.destroy();
 
     const data = {
-        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        labels: ['250', '275', '300', '325', '350', '353.5','375', '400', '425'],
         datasets: [{
             label: '1,6–diphenyl–1,3,5-hexatriene',
-            data: [0.05, 0.08, 0.29, 0.40, 0.60, 0.15, 0.01, 0.00],
+            data: [0.05, 0.08, 0.29, 0.40, 0.60,0.70, 0.15, 0.01, 0.00],
             borderColor: 'rgba(0, 192, 0, 1)',
             tension: 0.2
         }]
@@ -526,7 +526,7 @@ function baseLine3(){
     const data = {
         labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
         datasets: [{
-            label: '1,6–diphenyl–1,3,5-hexatriene',
+            label: '1,8–diphenyl–1,3,5,7-octatetraene',
             data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
             borderColor: 'rgba(0, 0, 0, 1)',
             tension: 0.2
@@ -568,10 +568,10 @@ function graph3() {
     if (myChart) myChart.destroy();
 
     const data = {
-        labels: ['250', '275', '300', '325', '350', '375', '400', '425'],
+        labels: ['250', '275', '300', '325', '350','374.0', '375', '400', '425'],
         datasets: [{
-            label: '1,6–diphenyl–1,3,5-hexatriene',
-            data: [0.05, 0.08, 0.29, 0.30, 0.40, 0.64, 0.35, 0.00],
+            label: '1,8–diphenyl–1,3,5,7-octatetraene',
+            data: [0.05, 0.08, 0.29, 0.30, 0.40, 0.69,0.44, 0.48, 0.00],
             borderColor: 'rgba(255, 80, 0, 1)',
             tension: 0.2
         }]
