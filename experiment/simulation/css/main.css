@@ -652,3 +652,34 @@ marquee{
     background-color: bisque;
 }
 
+/* tabel - page */
+.result-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 10px auto 25px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.data-table th {
+    background: #f1ede9;
+}
+
+.card2 {
+    position: absolute;
+    width: 76.5vw;
+    height: 50vh;
+    background-color: rgb(234, 219, 219);
+    border: 2px solid black ;
+    left: 1%;
+    bottom: 2%;
+}
