@@ -8,7 +8,7 @@ Some of these compounds that will be investigated are –<br>
 
 We shall present here the simple free-electron model first proposed by Kuhn for successfully determining the energy of absorption for molecules like a conjugated dye. We shall assume that the potential energy is constant along the chain and that it rises sharply to infinity at the ends; i.e., the π electron system is replaced by the free electrons moving in a one- dimensional box of length L. The quantum mechanical solution for the energy levels of this model is <br>
 
-E<sub>n</sub> = (n<sup>2</sup>h<sup>2</sup>/8mL<sup>2</sup> ) ;n = 1,2,3 ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+E<sub>n</sub> = (n<sup>2</sup>h<sup>2</sup>/8mL<sup>2</sup> ) ;n = 1,2,3 ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...(1)<br>
 
 
 
@@ -19,14 +19,14 @@ where m is the mass of an electron, n is quantum number and h is the Planck cons
 Since the Pauli exclusion principle limits the number of electrons in any given energy level to two (these two have opposite spins: +½, -½) the ground state of a molecule with N π-electrons will have the N/2 lowest levels filled and all higher levels empty. When the molecule absorbs light, this is associated with one electron jump from the highest filled level (n<sub>1</sub> = N/2) to the lowest empty level (n<sub>2</sub> = N/2 + 1). The energy change for the transition is <br>
 
 ΔE = E<sub>N/2+1</sub> - E<sub>N/2</sub> <br>
-= (h<sup>2</sup>/8mL<sup>2</sup>) [(N/2+1)<sup>2</sup> - (N/2)<sup>2</sup>]<br>
-= (N+1)h<sup>2</sup>/8mL<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (h<sup>2</sup>/8mL<sup>2</sup>) [(N/2+1)<sup>2</sup> - (N/2)<sup>2</sup>]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (N+1)h<sup>2</sup>/8mL<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...(2)<br>
 
 <!-- <img src="images/image_2.png"><br> -->
 
 Since ΔE = hν = hc/λ, where c is the speed of light and λ is the wavelength,<br>
 
-λ = 8mL<sup>2</sup>c/(N+1)h &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+λ = 8mL<sup>2</sup>c/(N+1)h &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...(3)<br>
 
 <!-- <img src="images/image_3.png"><br> -->
 
