@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following types of compounds are typically coloured due to their electronic spectra?",
+      "answers": {
+        "a": "Alkanes",
+        "b": "Alcohols",
+        "c": "Aldehydes",
+        "d": "Conjugated systems"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is an example of a n-π* transition?",
+      "answers": {
+        "a": "A transition from a bonding π orbital to an antibonding π* orbital",
+        "b": "A transition from a non-bonding n orbital to a bonding π* orbital",
+        "c": "A transition from a non-bonding n orbital to an antibonding π* orbital",
+        "d": "A transition from a bonding π orbital to a non-bonding n orbital"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How does the presence of a substituent affect the electronic spectra of a conjugated dye?",
+      "answers": {
+        "a": "It has no effect on the spectra",
+        "b": "It shifts the absorption bands to longer wavelengths",
+        "c": "It shifts the absorption bands to shorter wavelengths",
+        "d": "It can have either a blue or a red shift, depending on the nature of the substituent"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following types of compounds would be expected to have the highest molar absorptivity?",
+      "answers": {
+        "a": "Conjugated systems with many alternating double bonds",
+        "b": "Conjugated systems with few alternating double bonds",
+        "c": "Compounds with only single bonds",
+        "d": "Aromatic compounds"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the relationship between the energy of an electronic transition and the wavelength of light absorbed or emitted?",
+      "answers": {
+        "a": "They are directly proportional",
+        "b": "They are inversely proportional",
+        "c": "There is no relationship",
+        "d": "The relationship depends on the nature of the transition"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

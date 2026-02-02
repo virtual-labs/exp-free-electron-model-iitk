@@ -1,0 +1,685 @@
+body{
+    margin: 0;
+    background-color: burlywood;
+    color: black;
+    overflow: hidden;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.9vh;
+}
+
+.header{
+    background: linear-gradient(45deg, #04b7f8, aqua);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 99.9vw;
+}
+
+.header h1{
+    font-family: Helvetica, sans-serif;
+    margin-top: 2px;
+    margin-bottom: 0;
+    text-align: center;
+   font-size: 2.5vw ;
+   border: 2px dashed black;
+}
+
+.simulate{
+    width:78vw;
+    height: 88vh;
+    border: 3px solid black;
+    position: relative;
+}
+#message{
+    margin-left: 1%;
+    flex: 1;
+    background: linear-gradient(45deg, #f0d5ac , #f8ca8e);
+    text-align: center;
+    border: 3px solid black;
+    width: 20vw;
+    height: 88vh;
+    position: relative;
+}
+#ins{
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#text{
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 100;
+    color: blue;
+}
+
+/* timer */
+.timer-container {
+    position: relative;
+    top: 5%;
+    left: 20%;
+    width: 11vw;
+    height: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    background: radial-gradient(circle, #222, #000);
+}
+.progress-ring {
+    position: absolute;
+    width: 18vw;
+    height: 23vh;
+}
+svg {
+    transform: rotate(-90deg);
+}
+circle {
+    transition: stroke-dashoffset 10s linear;
+    fill: none;
+}
+
+/* simulation */
+.simulate #lab{
+    height: 88vh;
+    width: 78vw;
+    visibility: visible;
+    position: absolute;
+}
+
+#work{
+    width:78.9vw;
+    height: 88vh;
+    position:absolute;
+    
+}
+
+.pc{
+    position:relative;
+    visibility: visible;
+    margin: 0px;
+    padding: 0px;
+    width: 18vw;
+    height: 35vh;
+    transform: translate(5vw, 20vh); 
+}
+
+.pc:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+
+.pcimage{
+    height: 35vh;
+    width: 18vw;
+    visibility: visible;
+}
+
+.pcimage:hover{
+    height: 35.2vh;
+    width: 18.2vw;
+}
+
+.hovpc{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    top: 80%;
+}
+
+
+ #spectrometer{
+    position:relative;
+    margin: 0;
+    padding: 0;
+    height: 28vh;
+    width: 17vw;
+    visibility: visible;
+    transform: translate(20vw, -7vh);
+}
+
+#spectrometer:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+
+#spectoimg{
+    height: 28vh;
+    width: 17vw;
+    visibility: visible;
+}
+
+#spectoimg:hover{
+    height: 28.2vh;
+    width: 17.2vw;
+}
+
+#hovspecto{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    top: 70%;
+}
+
+#pippete{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 3vh;
+    width: 15vw;
+    visibility: visible;
+    transform: translate(32vw, -18vh);
+}
+#pippete:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+
+.pippeteimg{
+    height: 15vh;
+    width: 3vw;
+    visibility: visible;
+    transform: rotate(90deg);
+}
+.pippeteimg:hover{
+    height: 15.1vh;
+    width: 3.1vw;
+}
+#hovpippete{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    transform: translate(2vw, -7vh);
+}
+
+#conicalflask{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    width: 5vw;
+    visibility: visible;
+    transform: translate(38vw, -38vh);
+}
+#conicalflask:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+.flaskimg{
+    height: 20vh;
+    width: 5vw;
+    visibility: visible;
+}
+.flaskimg:hover{
+    height: 20.1vh;
+    width: 5.1vw;
+}
+#hovflask{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    transform: translate(2vw, -28vh);
+}
+
+#cuvette{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 8vh;
+    width: 5vw;
+    visibility: visible;
+    transform: translate(42vw, -39vh);
+}
+#cuvette:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+.cuvetteimg{
+    height: 8vh;
+    width: 5vw;
+    visibility: visible;
+}
+.cuvetteimg:hover{
+    height: 8.1vh;
+    width: 5.1vw;
+}
+#hovcuvette{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    transform: translate(2vw, -3vh);
+}
+
+#box1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    width: 12vw;
+    visibility: visible;
+    transform: translate(42vw, -66vh);
+}
+#box1:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+.box1img{
+    height: 20vh;
+    width: 12vw;
+    visibility: visible;
+}
+.box1img:hover{
+    height: 20.1vh;
+    width: 12.1vw;
+}
+#hovbox1{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    transform: translate(2vw, -28vh);
+}
+
+#box2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    width: 12vw;
+    visibility: visible;
+    transform: translate(48vw, -85vh);
+}
+#box2:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+.box2img{
+    height: 20vh;
+    width: 12vw;
+    visibility: visible;
+}
+.box2img:hover{
+    height: 20.1vh;
+    width: 12.1vw;
+}
+#hovbox2{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    transform: translate(2vw, -29vh);
+}
+
+#box3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 18vh;
+    width: 10vw;
+    visibility: visible;
+    transform: translate(57vw, -104vh);
+}
+#box3:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+.box3img{
+    height: 18vh;
+    width: 10vw;
+    visibility: visible;
+}
+.box3img:hover{
+    height: 18.1vh;
+    width: 10.1vw;
+}
+#hovbox3{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    transform: translate(2vw, -26vh);
+}
+
+#box4{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 18vh;
+    width: 10vw;
+    visibility: visible;
+    transform: translate(65vw, -118vh);
+}
+#box4:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+.box4img{
+    height: 18vh;
+    width: 10vw;
+    visibility: visible;
+}
+.box4img:hover{
+    height: 18.1vh;
+    width: 10.1vw;
+}
+#hovbox4{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    transform: translate(2vw, -25vh);
+}
+
+
+#alfoil{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 5vw;
+    visibility: visible;
+    transform: translate(56vw, -123vh);
+}
+#alfoil:hover h1{
+    visibility: visible;
+    transition: 0.1s;
+}
+.alfoilimg{
+    height: 10vh;
+    width: 5vw;
+    visibility: visible;
+}
+.alfoilimg:hover{
+    height: 10.1vh;
+    width: 5.1vw;
+}
+#hovalfoil{
+    position: absolute;
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    
+}
+
+#start{
+    position: absolute;
+    border-radius: 30%;
+    font-size: 3vw;
+    left: 35%;
+    top: 70%;
+    border: none;
+    color: white;
+    background-color: green;
+    box-shadow: 2px 2px 0px 1px black;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1%;
+}
+
+#start a{
+    text-decoration: none;
+    color: white;
+}
+
+/* steps */
+#ph {
+    position: absolute;
+    height: 8vh;
+    width: 5vw;
+    transition: all;
+    transition-duration: 1s;
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+    visibility: visible;
+    rotate: 180deg;
+    transform: translate(17vw,-59.4vh);
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.machine{
+    width: 25.5vw;
+    height: 40vh;
+    transform: translate(5vw, 35vh);
+}
+
+.conicalflask {
+    width: 5vw;
+    transform: translate(20vw, 28vh);
+    transition: all 2s ease-in-out;
+    transform-origin: top right;
+}
+
+.cuvette {
+    position:absolute;
+    width: 6vw;
+    height: 11vh;
+    transition: all 2s ease-in-out;
+    transform: translate(38vw, 18vh);
+}
+#a6{
+    width: 6vw;
+    height: 11vh;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    transition: all 2s ease-in-out;
+}
+
+.solvent{
+    width: 10vw;
+    transform: translate(36vw, 32vh);
+    transition: all 2s ease-in-out;
+    transform-origin: top right;
+}
+
+.refrence{
+    position:absolute;
+    width: 6vw;
+    height: 11vh;
+    transition: all 2s ease-in-out;
+    transform: translate(10vw, 5vh);
+}
+
+#a7{
+    width: 6vw;
+    height: 11vh;
+    position: absolute;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+    transform: translate(33vw, 18vh);
+}
+
+.solvent-fill{
+    width: 1.4vw;
+    height: 0;
+    background: lightblue;
+    position: absolute;
+    top: 21.4vh;
+    left: 35.3vw;
+    transition: height 2s ease-in-out;
+}
+
+.water-fill {
+    width: 1.4vw;
+    height: 0vh;
+    background: rgb(173, 230, 179);
+    position: absolute;
+    bottom: 1.5vh;
+    left: 2.3vw;
+    transition: height 2s ease-in-out;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 1.5vw;
+    height: 3vh;
+    border: 2px solid black;
+    border-radius: 50%;
+    outline: none;
+    background-color: rgb(247, 6, 6);
+    cursor: pointer;
+}
+input[type="radio"]:checked {
+    background-color: rgb(9, 187, 57);
+}
+.radio{
+    transform: translate(-15.5vw, 31vh);
+}
+
+/* Graph */
+
+.card{
+    position: absolute;
+    width: 40vw;
+    height: 41.5vh;
+    background-color: white;
+    border: 2px solid black ;
+    left: 28.5%;
+    bottom: 34%;
+}
+#mychart{
+    height: 100%;
+    width: 100%;
+}
+.button{
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    width: 40vw;
+    height: 7vh;
+    left: 28.5%;
+    top: 66.5%;
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+.auto{
+    font-size: 1vw;
+    margin-left: 4%;
+    margin-top: 2%;
+    box-shadow: 1.5px 1.5px 0px 1px black;
+}
+.inbox{
+    width: 16vw;
+    height: 50vh;
+    transform: translate(5.5vw, 16vh);
+    background-color: #ffffff;
+    border: 2px solid black;
+    text-align: center;
+}
+marquee{
+    color: red;
+    font-size: larger;
+    height: 5%;
+    background-color: bisque;
+}
+
+/* tabel - page */
+.result-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 10px auto 25px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.data-table th {
+    background: #f1ede9;
+}
+
+.card2 {
+    position: absolute;
+    width: 76.5vw;
+    height: 50vh;
+    background-color: rgb(234, 219, 219);
+    border: 2px solid black ;
+    left: 1%;
+    bottom: 2%;
+}

@@ -1,0 +1,29 @@
+
+/home/runner/work/exp-free-electron-model-iitk/exp-free-electron-model-iitk/experiment/simulation/js/main.js
+   26:10  warning  'timer' is defined but never used        no-unused-vars
+   62:10  warning  'pourWater' is defined but never used    no-unused-vars
+   90:10  warning  'pourSolvent' is defined but never used  no-unused-vars
+  117:10  warning  'pourBottle' is defined but never used   no-unused-vars
+  138:10  warning  'pourBottle2' is defined but never used  no-unused-vars
+  159:10  warning  'changeImage' is defined but never used  no-unused-vars
+  180:10  warning  'auto1' is defined but never used        no-unused-vars
+  223:19  warning  'Chart' is not defined                   no-undef
+  230:10  warning  'baseLine1' is defined but never used    no-unused-vars
+  267:19  warning  'Chart' is not defined                   no-undef
+  274:10  warning  'graph1' is defined but never used       no-unused-vars
+  311:19  warning  'Chart' is not defined                   no-undef
+  322:10  warning  'auto2' is defined but never used        no-unused-vars
+  365:19  warning  'Chart' is not defined                   no-undef
+  372:10  warning  'baseLine2' is defined but never used    no-unused-vars
+  409:19  warning  'Chart' is not defined                   no-undef
+  416:10  warning  'graph2' is defined but never used       no-unused-vars
+  453:19  warning  'Chart' is not defined                   no-undef
+  464:10  warning  'auto3' is defined but never used        no-unused-vars
+  507:19  warning  'Chart' is not defined                   no-undef
+  514:10  warning  'baseLine3' is defined but never used    no-unused-vars
+  551:19  warning  'Chart' is not defined                   no-undef
+  558:10  warning  'graph3' is defined but never used       no-unused-vars
+  595:19  warning  'Chart' is not defined                   no-undef
+
+✖ 24 problems (0 errors, 24 warnings)
+

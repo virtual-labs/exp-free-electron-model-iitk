@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "In a particle-in-a-box model the energy levels",
+      "answers": {
+        "a": "are equally spaced",
+        "b": "are proportional to the box length",
+        "c": "are inversely proportional to the square of the box length",
+        "d": "Have random values"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following statements is true about the electronic spectra of conjugated dyes?",
+      "answers": {
+        "a": "The position of the absorption bands is not affected by the length of the conjugated system",
+        "b": "The intensity of the absorption bands is not affected by the concentration of the dye in solution.",
+        "c": "The electronic spectra cannot be used to determine the concentration of the dye in solution",
+        "d": "The molar extinction coefficient can be calculated from the electronic spectra"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following statements is true about the electronic spectra of conjugated dyes?",
+      "answers": {
+        "a": "The n-π* transition always occurs at a lower energy than the π-π* transitioner1",
+        "b": "The π-π* transition always occurs at a lower energy than the n-π* transition.",
+        "c": "The energy difference between the π-π* and n-π* transitions is always constant irrespective of the molecule",
+        "d": "The σ - σ*  transition always occurs at a lower energy than the π -π* transition"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In the Free Electron Model, what is the effect of increasing the number of electrons in the conjugated system?",
+      "answers": {
+        "a": "The absorption bands shift to shorter wavelengths.",
+        "b": "The absorption bands shift to longer wavelengths.",
+        "c": "The absorption bands will not change.",
+        "d": "More vibrational fine structure will appear in the absorption band." 
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the general trend observed in the electronic spectra of conjugated dyes as the length of the conjugated system increases?",
+      "answers": {
+        "a": "The absorption bands shift to shorter wavelengths",
+        "b": "The absorption bands shift to longer wavelengths",
+        "c": "More vibrational fine structure will appear in the absorption band",
+        "d": "The intensity of the absorption bands decreases"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
