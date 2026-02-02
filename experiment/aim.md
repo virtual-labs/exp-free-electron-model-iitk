@@ -1,1 +1,1 @@
-Understanding the electronic spectra of conjugated dye and test of free electron model
+To study Electronic spectra of conjugated dye and to test free electron model
