@@ -1,1 +1,1 @@
-### Aim of the experiment
+To study Electronic spectra of conjugated dye and to test free electron model
